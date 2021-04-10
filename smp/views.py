@@ -4,5 +4,6 @@ def homefun(request):
     return render(request,"home.html")
 
 def helpfun(request):
-    
-    return render(request,"help.html")    
+    li=["c","d","e"]
+    b=7
+    return render(request,"help.html",{'list':li,'value':b})    
